@@ -1,9 +1,10 @@
 import 'dart:convert';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:http/http.dart' as http;
 import 'package:weather_app/models/weather_model.dart';
 
 class WeatherServices {
-  final String apiKey = '17cebd68b5c9aa2db430013e5d2b8e96';
+  final String apiKey = dotenv.env['API_KEY'] ?? '';
   Future<Weather> fetchWeather(String cityName) async {
     // print(cityName);
     final url = Uri.parse(

@@ -124,8 +124,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   'Weather App',
                   style: TextStyle(
                     fontSize: 32,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white,
+                    fontWeight: FontWeight.w400,
+                    color: const Color.fromARGB(255, 0, 0, 0),
                   ),
                 ),
                 SizedBox(height: 20),
